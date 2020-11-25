@@ -1,0 +1,38 @@
+#The basic formatting of the YAML file is demonstrated below.
+#This file can be renamed.
+#boards must be added in the format shown. Leave unwanted options blank.
+
+board1:
+  name: "Board 1"
+  test_location: "test_location/DirA"
+  base_cmd: "./test.o"
+  sn_entry: False
+  revisions:
+    rev1:
+      rev_str: "REV1"
+      test_file: "REV1.txt"
+      req_opts:
+    rev2:
+      rev_str: "REV2"
+      test_file: "REV2.txt"
+      req_opts: None
+board2:
+  name: "Board 2"
+  test_location: "test_location/DirB"
+  base_cmd: "./test.o"
+  sn_entry: False
+  revisions:
+    rev1:
+      rev_str: "REV1"
+      test_file: "REV1.txt"
+      req_opts:
+    rev2:
+      rev_str: "REV2"
+      test_file: "REV2.txt"
+      req_opts: None
+board3:
+  name: "Board 3"
+  test_location: "test_location/DirB"
+  base_cmd: "./test.o"
+  sn_entry: False
+  revisions:
