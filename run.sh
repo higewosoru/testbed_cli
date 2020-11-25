@@ -1,5 +1,10 @@
-#put the main run command here... don't activate virtual environment, just point interpreter at MAIN.
+#run the application with the python virtual environment interpreter.
+
+source env/bin/activate
+pip3 install -r requirements.txt
 
 cd app/
-../env/bin/python3 fake_app.py
+python3 app.py
 cd ..
+
+deactivate

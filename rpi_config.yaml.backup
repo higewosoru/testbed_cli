@@ -1,0 +1,41 @@
+#Modified version of edit_me.yaml, points to right location w/ cross-compiled executeables for use w/RPi.
+#I know there's a smarter way to do this, but it's just a test so I don't really care too much.
+
+#The basic formatting of the YAML file is demonstrated below.
+#This file can be renamed.
+#boards must be added in the format shown. Leave unwanted options blank.
+
+board1:
+  name: "Board 1"
+  test_location: "ARM_test_location/DirA"
+  base_cmd: "./test.o"
+  sn_entry: False
+  revisions:
+    rev1:
+      rev_str: "REV1"
+      test_file: "REV1.txt"
+      req_opts:
+    rev2:
+      rev_str: "REV2"
+      test_file: "REV2.txt"
+      req_opts: None
+board2:
+  name: "Board 2"
+  test_location: "ARM_test_location/DirB"
+  base_cmd: "./test.o"
+  sn_entry: False
+  revisions:
+    rev1:
+      rev_str: "REV1"
+      test_file: "REV1.txt"
+      req_opts:
+    rev2:
+      rev_str: "REV2"
+      test_file: "REV2.txt"
+      req_opts: None
+board3:
+  name: "Board 3"
+  test_location: "ARM_test_location/DirB"
+  base_cmd: "./test.o"
+  sn_entry: False
+  revisions:
